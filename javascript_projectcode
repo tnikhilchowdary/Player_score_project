@@ -1,0 +1,26 @@
+var score = 0;
+var btn1 = document.querySelector("#play1");
+let p1 = document.querySelector("#score1");
+
+var score_1 = 0;
+let btn2 = document.querySelector("#play2");
+let p2 = document.querySelector("#score2");
+
+var reset_button = document.querySelector("#reset");
+
+btn1.addEventListener("click",function(){
+score++;
+p1.textContent = score;
+});
+btn2.addEventListener("click",function(){
+  score_1++;
+  p2.textContent = score_1;
+});
+
+reset_button.addEventListener("click",function(){
+  score=0;
+  score_1=0;
+  p1.textContent=score; 
+  p2.textContent=score_1;
+  
+});
